@@ -8,25 +8,42 @@
   <meta name="author" content="Jonas Keidel" />
   <meta name="description" content="Thierfelder Jugendtage" />
   <meta name="robots" content="index" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
   <link href='css/style.css' rel='stylesheet' type='text/css'>
   <meta content='width=500, initial-scale=0.6, maximum-scale=0.6, minimum-scale=0.6' name='viewport'>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    (function($) {
+        $.fn.goTo = function() {
+            $('html, body').animate({
+                scrollTop: $(this).offset().top + 'px'
+            }, 'medium');
+            return this; // for chaining...
+        }
+    })(jQuery);
+  </script>
 </head>
 
 <body>
   <div class="section" id="first">
-
+    <div id="scroll_down"><a href="javascript:$('#infos').goTo();">weiter</a></div>
   </div>
   <div class="section" id="infos">
-    <div class="block large_text">vom 08. bis 10.09.2017</div>
+    <div class="block text large">08. bis 10.09.2017</div>
     <br />
-    <div class="block larger_text">Neue Location!</div>
+    <div class="block text larger bg-black amatic">Neue Location!</div>
     <br />
-    <div class="block large_text">
+    <div class="block text large">
       Fliegerhalle Thierfeld
-      <span>
+      <span class="small">
         1. Drachenfliegerclub Sachsen e.V., Katzenstr. 14, 08118 Hartenstein OT Thierfeld
       </span>
     </div>
+    <br />
+    <div class="block text medium bg-black amatic">weitere Infos folgen bald!</div>
   </div>
 </body>
 </html>

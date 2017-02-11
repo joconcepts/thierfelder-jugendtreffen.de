@@ -1,10 +1,18 @@
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('fonts/amaticsc-regular.woff2') format('woff2'),
+         url('fonts/amaticsc-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
   background-color: #000;
-  font-family: Tahoma, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 /* COLORS
@@ -22,23 +30,54 @@ div.section#first {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
+  position: relative;
+}
+div.section#first div#scroll_down {
+  position: absolute;
+  bottom: 03px;
+  left: 50%;
+  display: block;
+  width: 100px;
+  margin-left: -50px;
+  font-size: 40px;
+  background-color: #e47725;
+  color: #000;
+  font-family: 'amatic_scregular', sans-serif;
+}
+div.section#first div#scroll_down a {
+  color: #000;
+  text-decoration: none;
 }
 
+div.section#infos {
+  height: 100%;
+}
 div.section#infos div.block {
   margin: 20px;
   padding: 10px 20px;
 }
-div.section#infos div.large_text {
+div.section#infos div.text {
   display: inline-block;
   background-color: #e47725;
+  color: #000;
+}
+div.section#infos div.text.large {
   font-size: 70px;
 }
-div.section#infos div.larger_text {
-  display: inline-block;
-  background-color: #e47725;
-  font-size: 100px;
+div.section#infos div.text.larger {
+  font-size: 120px;
 }
-div.section#infos div.large_text span {
+div.section#infos div.text.bg-black {
+  color: #e47725;
+  background-color: #000;
+}
+div.section#infos div.text span.small {
   font-size: 20px;
   display: block;
+}
+div.section#infos div.text.medium {
+  font-size: 40px;
+}
+div.section#infos div.text.amatic {
+  font-family: 'amatic_scregular', sans-serif;
 }
