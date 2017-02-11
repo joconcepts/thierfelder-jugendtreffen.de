@@ -34,7 +34,7 @@ div.section#first {
 }
 div.section#first div#scroll_down {
   position: absolute;
-  bottom: 03px;
+  bottom: 30px;
   left: 50%;
   display: block;
   width: 100px;
