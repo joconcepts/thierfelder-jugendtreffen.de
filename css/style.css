@@ -78,6 +78,20 @@ div.section#infos div.text span.small {
 div.section#infos div.text.medium {
   font-size: 40px;
 }
-div.section#infos div.text.amatic {
+.text.amatic {
   font-family: 'amatic_scregular', sans-serif;
+}
+div.referent {
+  padding: 20px;
+  overflow: auto;
+  max-width: 800px;
+  margin: auto 0;
+}
+div.referent div.referent_left {
+  float: left;
+  width: 300px;
+}
+div.referent div.referent_right {
+  margin-left: 320px;
+  text-align: left;
 }
