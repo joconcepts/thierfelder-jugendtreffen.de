@@ -11,7 +11,12 @@ body, html {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-image: url(../img/bg.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: 'Lato', sans-serif;
 }
 
@@ -26,11 +31,23 @@ div.section {
 }
 
 div.section#first {
+  height: 100%;
+  position: relative;
+}
+div.section#first div#banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
   background-image: url(../img/banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100%;
-  position: relative;
+  width: 800px;
+  height: 520px;
+  margin-left: -400px;
+  margin-top: -260px;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
 }
 div.section#first div#scroll_down {
   position: absolute;
@@ -43,55 +60,87 @@ div.section#first div#scroll_down {
   background-color: #e47725;
   color: #000;
   font-family: 'amatic_scregular', sans-serif;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
 }
 div.section#first div#scroll_down a {
   color: #000;
   text-decoration: none;
 }
 
-div.section#infos {
-  height: 100%;
+h1, h2, h3 {
+  font-family: 'amatic_scregular', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-shadow: 4px 4px 4px #000;
 }
-div.section#infos div.block {
-  margin: 20px;
-  padding: 10px 20px;
-}
-div.section#infos div.text {
-  display: inline-block;
-  background-color: #e47725;
-  color: #000;
-}
-div.section#infos div.text.large {
-  font-size: 70px;
-}
-div.section#infos div.text.larger {
+h1 {
   font-size: 120px;
 }
-div.section#infos div.text.bg-black {
+h2 {
+  font-size: 80px;
+}
+
+.text.white {
+  color: #fff;
+}
+.text.black {
+  color: #000;
+}
+.text.orange {
   color: #e47725;
+}
+
+div.section#infos div#where {
   background-color: #000;
-}
-div.section#infos div.text span.small {
-  font-size: 20px;
-  display: block;
-}
-div.section#infos div.text.medium {
+  color: #fff;
   font-size: 40px;
+  padding: 20px;
 }
-.text.amatic {
-  font-family: 'amatic_scregular', sans-serif;
-}
-div.referent {
+
+div.section#referenten div.referent {
   padding: 20px;
   overflow: auto;
   max-width: 800px;
-  margin: auto 0;
+  margin: 20px auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
 }
-div.referent div.referent_left {
+div.section#referenten div.referent div.referent_left {
   float: left;
   width: 300px;
 }
-div.referent div.referent_right {
+div.section#referenten div.referent div.referent_right {
   margin-left: 320px;
   text-align: left;
+  font-size: 24px;
+}
+div.section#referenten div.referent div.referent_right b {
+  font-family: 'amatic_scregular', sans-serif;
+  font-size: 34px;
+  border-bottom: solid 2px #000;
+  padding: 0px 5px;
+  margin-left: -5px;
+}
+
+@media screen and (max-width: 800px) {
+  div.section#first div#banner {
+    width: 100%;
+    left: 0%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  div.section#referenten div.referent div.referent_left {
+    float: none;
+    width: 100%;
+  }
+  div.section#referenten div.referent div.referent_right {
+    text-align: center;
+    margin-left: 0px;
+  }
 }
