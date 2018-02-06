@@ -1,9 +1,19 @@
 @font-face {
-    font-family: 'amatic_scregular';
-    src: url('fonts/amaticsc-regular.woff2') format('woff2'),
-         url('fonts/amaticsc-regular.woff') format('woff');
+    font-family: 'dk_kaikouraregular';
+    src: url('dk_kaikoura-webfont.woff2') format('woff2'),
+         url('dk_kaikoura-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tulipregular';
+    src: url('tulip_demo-webfont.woff2') format('woff2'),
+         url('tulip_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body, html {
@@ -17,7 +27,7 @@ body, html {
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Lato', sans-serif;
+  font-family: 'tulipregular', sans-serif;
 }
 
 /* COLORS
@@ -33,18 +43,19 @@ div.section {
 div.section#first {
   height: 100%;
   position: relative;
+  background-color: #000;
 }
 div.section#first div#banner {
   position: absolute;
   left: 50%;
   top: 50%;
-  background-image: url(../img/banner.png);
+  background-image: url(../img/banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  width: 650px;
-  height: 850px;
-  margin-left: -325px;
-  margin-top: -425px;
+  width: 600px;
+  height: 836px;
+  margin-left: -300px;
+  margin-top: -418px;
 }
 div.section#first div#scroll_down {
   position: absolute;
@@ -54,29 +65,35 @@ div.section#first div#scroll_down {
   width: 100px;
   margin-left: -50px;
   font-size: 40px;
-  background-color: #e47725;
+  background-color: #bd2328;
   color: #000;
-  font-family: 'amatic_scregular', sans-serif;
-  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
-  box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+  font-family: 'tulipregular', sans-serif;
 }
 div.section#first div#scroll_down a {
   color: #000;
   text-decoration: none;
+  -webkit-transition: 1s -webkit-color linear;
+  -moz-transition: 1s -moz-color linear;
+  -moz-transition: 1s color linear;
+  -ms-transition: 1s -ms-color linear;
+  -o-transition: 1s -o-color linear;
+  transition: 1s color linear, 1s -webkit-color linear;
+}
+div.section#first div#scroll_down a:hover {
+  color: #fff;
 }
 
 h1, h2, h3 {
-  font-family: 'amatic_scregular', sans-serif;
+  font-family: 'dk_kaikouraregular', sans-serif;
   padding: 0px;
   margin: 0px;
   text-shadow: 4px 4px 4px #000;
 }
 h1 {
-  font-size: 120px;
+  font-size: 100px;
 }
 h2 {
-  font-size: 80px;
+  font-size: 70px;
 }
 .small {
   font-size: 20px;
@@ -122,10 +139,11 @@ div.section#news div.news {
   -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+  font-family: sans-serif;
 }
 div.section#news div.news h3 {
   font-size: 36px;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 2px #bd2328;
   text-shadow: none;
 }
 div.section#news div.news p a {
@@ -137,7 +155,13 @@ div.section#news div.news p a {
   text-decoration: none;
 }
 div.section#news div.news p a:hover {
-  background-color: #e47725;
+  background-color: #bd2328;
+}
+div.section#news div.news.flyer {
+  background-color: #000;
+  text-align: center;
+  color: #bd2328;
+  border: solid 1px #bd2328;
 }
 
 div.section#referenten div.referent {
@@ -199,6 +223,16 @@ div#social {
 }
 div#social a {
   margin-right: 25px;
+  text-decoration: none;
+  -webkit-transition: 1s -webkit-filter linear;
+  -moz-transition: 1s -moz-filter linear;
+  -moz-transition: 1s filter linear;
+  -ms-transition: 1s -ms-filter linear;
+  -o-transition: 1s -o-filter linear;
+  transition: 1s filter linear, 1s -webkit-filter linear;
+}
+div#social a:hover {
+  filter: brightness(200%);
 }
 
 @media screen and (max-width: 800px) {
