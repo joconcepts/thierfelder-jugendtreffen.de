@@ -152,8 +152,8 @@ div.section#news div.news p a {
   display: inline-block;
   padding: 5px 15px;
   margin: 5px 5px 5px 0px;
-  border: solid 1px #000;
-  color: #000;
+  border: solid 1px #fff;
+  color: #fff;
   text-decoration: none;
 }
 div.section#news div.news p a:hover {
