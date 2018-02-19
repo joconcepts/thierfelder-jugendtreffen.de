@@ -44,18 +44,13 @@ div.section#first {
   height: 100%;
   position: relative;
   background-color: #000;
-}
-div.section#first div#banner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   background-image: url(../img/banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  width: 600px;
-  height: 836px;
-  margin-left: -300px;
-  margin-top: -418px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 div.section#first div#scroll_down {
   position: absolute;
@@ -68,6 +63,7 @@ div.section#first div#scroll_down {
   background-color: #bd2328;
   color: #000;
   font-family: 'tulipregular', sans-serif;
+  display: none;
 }
 div.section#first div#scroll_down a {
   color: #000;
@@ -245,6 +241,9 @@ div#social a:hover {
 @media screen and (max-width: 650px) {
   div.section#referenten div.referent {
     margin: 20px 20px;
+  }
+  div.section#first div#scroll_down {
+    display: block;
   }
   div.section#referenten div.referent div.referent_left {
     float: none;
