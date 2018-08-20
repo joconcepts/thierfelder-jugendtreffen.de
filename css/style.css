@@ -171,9 +171,29 @@ div.section#referenten div.referent {
   -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
   box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
   font-family: sans-serif;
+  text-align: justify;
+  font-size: 20px;
 }
-div.section#referenten div.referent h3 {
-  font-size: 36px;
+div.section#referenten div.referent div.referent_header {
+  font-size: 56px;
+  line-height: 340px;
+  text-shadow: 0px 0px 10px #000;
+  text-transform: uppercase;
+  color: #fff;
+  height: 340px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+div.section#referenten div.referent div.referent_header.motoki {
+  background-image: url('../img/referenten/motoki.jpg');
+}
+div.section#referenten div.referent div.referent_header.stefan {
+  background-image: url('../img/referenten/stefan.jpg');
 }
 div.section#referenten div.referent a {
   display: inline-block;
