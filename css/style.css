@@ -47,10 +47,7 @@ div.section#first {
   background-image: url(../img/banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  background-size: 50%;
 }
 div.section#first div#scroll_down {
   position: absolute;
