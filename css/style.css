@@ -148,6 +148,8 @@ div.section#news div.news h3 {
   font-size: 36px;
   border-bottom: solid 2px #bd2328;
   text-shadow: none;
+  margin: 0px -15px;
+  padding: 4px 15px;
 }
 div.section#news div.news p a {
   display: inline-block;
@@ -261,6 +263,37 @@ div#social a {
 }
 div#social a:hover {
   filter: brightness(200%);
+}
+
+img#qr {
+  border: solid 4px #fff;
+  margin: 10px;
+}
+
+span.programm_day {
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: solid 1px #fff;
+  padding: 4px 0px;
+  margin-bottom: 4px;
+  display: block;
+}
+ul.programm {
+  padding: 0;
+  margin: 8px 0px;
+  list-style-type: none;
+}
+ul.programm li {
+  line-height: 24px;
+}
+ul.programm li span.programm_time {
+  color: #aaa;
+  margin-right: 10px;
+}
+ul.programm li b {
+  background-color: #bd2328;
+  padding: 2px 4px;
+  margin-left: -4px;
 }
 
 @media screen and (max-width: 800px) {
